@@ -20,22 +20,11 @@ body {
 }
 
 picture {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
-    max-width: 75vw;
-    width: 100%;
-    pointer-events: none;
-}
-
-picture img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: contain;
-    max-width: 100%;
 }
 
 a {
