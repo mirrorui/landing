@@ -213,6 +213,10 @@ a {
     padding-right: 16px;
 }
 
+.btn:hover {
+    color: #a0a0a0;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background: url(background-dark.png) center center no-repeat;
@@ -238,6 +242,10 @@ a {
 
     .carousel-header {
         color: #D4D4D4;
+    }
+
+    .btn:hover {
+        color: #eee;
     }
 }
 
