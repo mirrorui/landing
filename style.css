@@ -19,6 +19,25 @@ body {
     letter-spacing: -0.04em;
 }
 
+picture {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    max-width: 75vw;
+    width: 100%;
+    pointer-events: none;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    max-width: 100%;
+}
+
 a {
     text-decoration: none;
 }
@@ -61,7 +80,7 @@ a {
 }
 
 .header {
-    font-size: 64px;
+    font-size: clamp(2rem, 6vw, 4rem);
     font-weight: 700;
     margin-bottom: 7px;
 }
@@ -83,7 +102,7 @@ a {
 }
 
 .subheader {
-    font-size: 16px;
+    font-size: clamp(0.875rem, 2vw, 1rem);
     font-weight: 600;
     color: #6D6D6D;
     margin-bottom: 31px;
@@ -161,6 +180,7 @@ a {
 .copyright {
     margin-left: auto;
     margin-right: auto;
+    z-index: 10;
 }
 
 .footer-link {
@@ -195,7 +215,9 @@ a {
 
 @media (prefers-color-scheme: dark) {
     body {
+        background: url(background-dark.png) center center no-repeat;
         background-color: #0C0E11;
+        background-size: 100% 100%;
     }
 
     .btn {
@@ -232,13 +254,12 @@ a {
         text-align: center;
     }
 
-    .header {
-        font-size: 48px;
-    }
-
     .subheader {
-        font-size: 14px;
         margin-left: 24px;
         margin-right: 24px;
+    }
+
+    .mobile-hidden {
+        display: none;
     }
 }
