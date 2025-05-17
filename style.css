@@ -87,12 +87,14 @@ a {
 }
 
 .header-text2 {
-    color: #FF7700;
+    background: linear-gradient(to right, #FF7700, #ffa95d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .subheader {
     font-size: clamp(0.875rem, 2vw, 1rem);
-    font-weight: 600;
+    font-weight: 500;
     color: #6D6D6D;
     margin-bottom: 31px;
 }
@@ -134,7 +136,7 @@ a {
 
 .carousel-header {
     color: #6D6D6D;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
 }
 
@@ -175,13 +177,13 @@ a {
 .footer-link {
     font-size: 14px;
     color: #FFFFFF;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .copyright {
     color: #FFFFFF;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 4px;
 }
 
@@ -200,12 +202,12 @@ a {
     justify-content: center;
     gap: 6px;
     padding-right: 16px;
-    transition: color 0.3s ease;
+    transition: color 0.4s ease;
 }
 
 .btn:hover {
     color: #a0a0a0;
-    transition: color 0.3s ease;
+    transition: color 0.4s ease;
 }
 
 @media (prefers-color-scheme: dark) {
