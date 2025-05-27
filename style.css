@@ -213,7 +213,7 @@ a {
 @media (prefers-color-scheme: dark) {
     body {
         background: url(background-dark.png) center center no-repeat;
-        background-color: #0C0E11;
+        background-color: #00050A;
         background-size: 100% 100%;
     }
 
